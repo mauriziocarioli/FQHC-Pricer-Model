@@ -16,13 +16,9 @@ public class Claim implements Serializable {
 	@Description("SRVC-FROM-DATE")
 	private Date serviceFromDate;
 	private Date serviceThroughDate;
-
 	private Double totalClaimPayment;
-
 	private Double totalMedicareReimbursement;
-
 	private String claimReturnCode;
-
 	private Double totalClaimCoinsurance;
 
 	public Claim() {

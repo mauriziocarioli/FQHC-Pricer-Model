@@ -9,7 +9,4 @@ public class MAPlan implements Serializable {
     public MAPlan() {
     }
 
-
-
-
 }

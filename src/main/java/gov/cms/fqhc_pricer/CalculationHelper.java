@@ -56,24 +56,4 @@ public class CalculationHelper implements Serializable {
 		this.gafs2019Rate = gafs2019Rate;
 	}
 
-	public CalculationHelper gafs2017Rate(Double gafs2017Rate) {
-		this.gafs2017Rate = gafs2017Rate;
-		return this;
-	}
-
-	public CalculationHelper gafs2018Rate(Double gafs2018Rate) {
-		this.gafs2018Rate = gafs2018Rate;
-		return this;
-	}
-
-	public CalculationHelper gafs2018RevisedRate(Double gafs2018RevisedRate) {
-		this.gafs2018RevisedRate = gafs2018RevisedRate;
-		return this;
-	}
-
-	public CalculationHelper gafs2019Rate(Double gafs2019Rate) {
-		this.gafs2019Rate = gafs2019Rate;
-		return this;
-	}
-
 }

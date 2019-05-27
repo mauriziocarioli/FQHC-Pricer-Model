@@ -76,34 +76,4 @@ public class LineCalculationHelper implements Serializable {
 		this.roundPpsAmount = roundPpsAmount;
 	}
 
-	public LineCalculationHelper baseRate(Double baseRate) {
-		this.baseRate = baseRate;
-		return this;
-	}
-
-	public LineCalculationHelper addonFactor(Double addonFactor) {
-		this.addonFactor = addonFactor;
-		return this;
-	}
-
-	public LineCalculationHelper gftBaseRate(Double gftBaseRate) {
-		this.gftBaseRate = gftBaseRate;
-		return this;
-	}
-
-	public LineCalculationHelper adjFactor(Double adjFactor) {
-		this.adjFactor = adjFactor;
-		return this;
-	}
-
-	public LineCalculationHelper line(Integer line) {
-		this.line = line;
-		return this;
-	}
-
-	public LineCalculationHelper roundPpsAmount(Double roundPpsAmount) {
-		this.roundPpsAmount = roundPpsAmount;
-		return this;
-	}
-
 }

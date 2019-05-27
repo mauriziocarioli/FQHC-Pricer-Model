@@ -9,7 +9,4 @@ public class StopProcessing implements Serializable {
     public StopProcessing() {
     }
 
-
-
-
 }
