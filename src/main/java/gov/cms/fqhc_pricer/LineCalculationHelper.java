@@ -8,41 +8,48 @@ public class LineCalculationHelper implements Serializable {
 	static final long serialVersionUID = 1L;
 
 	@Description("This object holds parameters derived at the line level")
-	private Double baserate;
-	private Double addonfactor;
-	private Double gftbaserate;
-
+	private Double baseRate;
+	private Double addonFactor;
+	private Double gftBaseRate;
 	private Double adjFactor;
-
 	private Integer line;
-
 	private Double roundPpsAmount;
+
 
 	public LineCalculationHelper() {
 	}
 
-	public Double getBaserate() {
-		return this.baserate;
+	public LineCalculationHelper(Double baseRate, Double addonFactor, Double gftBaseRate, Double adjFactor, Integer line, Double roundPpsAmount) {
+		this.baseRate = baseRate;
+		this.addonFactor = addonFactor;
+		this.gftBaseRate = gftBaseRate;
+		this.adjFactor = adjFactor;
+		this.line = line;
+		this.roundPpsAmount = roundPpsAmount;
 	}
 
-	public void setBaserate(Double baserate) {
-		this.baserate = baserate;
+	public Double getBaseRate() {
+		return this.baseRate;
 	}
 
-	public Double getAddonfactor() {
-		return this.addonfactor;
+	public void setBaseRate(Double baseRate) {
+		this.baseRate = baseRate;
 	}
 
-	public void setAddonfactor(Double addonfactor) {
-		this.addonfactor = addonfactor;
+	public Double getAddonFactor() {
+		return this.addonFactor;
 	}
 
-	public Double getGftbaserate() {
-		return this.gftbaserate;
+	public void setAddonFactor(Double addonFactor) {
+		this.addonFactor = addonFactor;
 	}
 
-	public void setGftbaserate(Double gftbaserate) {
-		this.gftbaserate = gftbaserate;
+	public Double getGftBaseRate() {
+		return this.gftBaseRate;
+	}
+
+	public void setGftBaseRate(Double gftBaseRate) {
+		this.gftBaseRate = gftBaseRate;
 	}
 
 	public Double getAdjFactor() {
@@ -69,16 +76,34 @@ public class LineCalculationHelper implements Serializable {
 		this.roundPpsAmount = roundPpsAmount;
 	}
 
-	public LineCalculationHelper(Double baserate,
-			Double addonfactor, Double gftbaserate,
-			Double adjFactor, Integer line,
-			Double roundPpsAmount) {
-		this.baserate = baserate;
-		this.addonfactor = addonfactor;
-		this.gftbaserate = gftbaserate;
+	public LineCalculationHelper baseRate(Double baseRate) {
+		this.baseRate = baseRate;
+		return this;
+	}
+
+	public LineCalculationHelper addonFactor(Double addonFactor) {
+		this.addonFactor = addonFactor;
+		return this;
+	}
+
+	public LineCalculationHelper gftBaseRate(Double gftBaseRate) {
+		this.gftBaseRate = gftBaseRate;
+		return this;
+	}
+
+	public LineCalculationHelper adjFactor(Double adjFactor) {
 		this.adjFactor = adjFactor;
+		return this;
+	}
+
+	public LineCalculationHelper line(Integer line) {
 		this.line = line;
+		return this;
+	}
+
+	public LineCalculationHelper roundPpsAmount(Double roundPpsAmount) {
 		this.roundPpsAmount = roundPpsAmount;
+		return this;
 	}
 
 }
