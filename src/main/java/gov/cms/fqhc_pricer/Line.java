@@ -8,6 +8,7 @@ public class Line implements Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	private Integer line;
 	private String hcpc;
 	private String description;
 	private String modifier;
@@ -28,8 +29,6 @@ public class Line implements Serializable {
 	private String lineReturnCode;
 
 	private int serviceYear;
-
-	private Integer line;
 
 	public Line() {
 	}
