@@ -8,7 +8,4 @@ public class NotMAPlan implements Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	public NotMAPlan() {
-	}
-
 }
