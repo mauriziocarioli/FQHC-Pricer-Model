@@ -14,18 +14,19 @@ public class LineCalculationHelper implements Serializable {
 	private Double adjFactor;
 	private Integer line;
 	private Double roundPpsAmount;
-
+	private Double baseCoinsuranceAmount;
 
 	public LineCalculationHelper() {
 	}
 
-	public LineCalculationHelper(Double baseRate, Double addonFactor, Double gftBaseRate, Double adjFactor, Integer line, Double roundPpsAmount) {
+	public LineCalculationHelper(Double baseRate, Double addonFactor, Double gftBaseRate, Double adjFactor, Integer line, Double roundPpsAmount, Double baseCoinsuranceAmount) {
 		this.baseRate = baseRate;
 		this.addonFactor = addonFactor;
 		this.gftBaseRate = gftBaseRate;
 		this.adjFactor = adjFactor;
 		this.line = line;
 		this.roundPpsAmount = roundPpsAmount;
+		this.baseCoinsuranceAmount = baseCoinsuranceAmount;
 	}
 
 	public Double getBaseRate() {
@@ -74,6 +75,14 @@ public class LineCalculationHelper implements Serializable {
 
 	public void setRoundPpsAmount(Double roundPpsAmount) {
 		this.roundPpsAmount = roundPpsAmount;
+	}
+
+	public Double getBaseCoinsuranceAmount() {
+		return baseCoinsuranceAmount;
+	}
+
+	public void setBaseCoinsuranceAmount(Double baseCoinsuranceAmount) {
+		this.baseCoinsuranceAmount = baseCoinsuranceAmount;
 	}
 
 }

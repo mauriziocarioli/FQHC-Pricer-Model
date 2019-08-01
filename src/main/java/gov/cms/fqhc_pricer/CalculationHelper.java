@@ -13,11 +13,11 @@ public class CalculationHelper implements Serializable {
 	private Double gafs2018RevisedRate;
 
 	private Double gafs2019Rate;
-
+	
 	public CalculationHelper() {
 	}
 
-	public CalculationHelper(Double gafs2017Rate, Double gafs2018Rate, Double gafs2018RevisedRate, Double gafs2019Rate) {
+	public CalculationHelper(Double gafs2017Rate, Double gafs2018Rate, Double gafs2018RevisedRate, Double gafs2019Rate, Double baseCoinsuranceAmount) {
 		this.gafs2017Rate = gafs2017Rate;
 		this.gafs2018Rate = gafs2018Rate;
 		this.gafs2018RevisedRate = gafs2018RevisedRate;
